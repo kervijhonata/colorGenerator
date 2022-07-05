@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #101a20;
+  color: #e7e7e7;
+}
+
+header {
+  padding: 24px;
+  font-size: 18pt;
+  mix-blend-mode: hard-light;
+  background-color: rgba(255, 255, 255, 0.521);
+  color: black;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+main {
+  min-height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#generator {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 4px;
+}
+#generator #hex-input {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  font-family: monospace;
+  font-size: 12pt;
+  text-align: center;
+}
+#generator #add-button {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  font-size: 20pt;
+}
+#generator #random-button {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  font-size: 20pt;
+}
+#generator #color-input {
+  grid-column: 1/5;
+  grid-row: 2/6;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  font-family: monospace;
+  font-size: 10pt;
+  padding: 12px 26px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+footer .dev-tag {
+  transition: 0.1s ease-in;
+}
+footer .dev-tag:hover {
+  mix-blend-mode: difference;
+}
+
+/*# sourceMappingURL=style.css.map */
