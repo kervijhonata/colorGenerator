@@ -14,9 +14,15 @@
     <main>
         <div id="generator">
             <input type="text" name="hex-input" id="hex-input">
-            <button type="submit" name="add-button" id="add-button">+</button>
-            <button type="submit" name="random-button" id="random-button">~</button>
+            <button class="btn" type="submit" name="random-button" id="random-button">RANDOMIZE</button>
+            <button class="btn" type="submit" name="add-button" id="add-button">+</button>
+            <button class="btn" type="submit" name="clear-button" id="clear-button">CLEAR</button>
+            <button class="btn" type="submit" name="save-button" id="save-button">SAVE</button>
             <input type="color" name="color-input" id="color-input">
+            <canvas id="canvas" width="252" height="316"></canvas>
+        </div>
+        <div id="renderArea">
+            <img src="" alt="rendered pallete" srcset="" id="render-pallete">
         </div>
     </main>
     <footer>
